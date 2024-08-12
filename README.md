@@ -16,10 +16,19 @@ and server in the transport layer.
 - The server is a HTTP server which parses the request.
 - And forms a HTTP response and sends it to client using TCP connection.
 - HTTP/3 unlike its previous versions uses UDP which is another transport layer protocol responsible for transporting data.
-- The below diagram shows how http uses TCP connection to send data.
+- The below diagram shows how http uses TCP connection to send data
 
 <img src="./images/http-tcp.png">
 
+- As shown in the diagram, a HTTP request consists of the following:-<br/>
+a) start line with HTTP method (here it is get) and path (here it is /)<br/>
+b) HTTP headers<br/>
+c) Body/Payload chunks (binary data)<br/>
+
+- A HTTP response consists of the following:-<br/>
+a) Status code<br/>
+b) HTTP headers<br/>
+c) Body/Payload chunks (binary data)<br/>
 
 **3) How to test the above ?**
 - In order to test the above, I created a simple HTTP server and HTTP client using node.js
