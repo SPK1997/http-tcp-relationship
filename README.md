@@ -2,7 +2,7 @@
 **1) What is aim of this project ?**
 - To show the relationship between HTTP which is an application layer protocol and TCP which is a transport layer protocol.
 
-2) What is misconception about http 
+**2) What is misconception about http** 
 - A common misconception is that HTTP is responsible for transporting data over the network between client and server. This is not true.
 - HTTP is an application layer protocol and it works only when data is in a certain structure. 
 - HTTP is based on TCP which is a transport layer protocol.
@@ -16,7 +16,7 @@ and server in the transport layer.
 - The server is a HTTP server which parses the request.
 - And forms a HTTP response and sends it to client using TCP connection.
 
-**2) How to test the above ?**
+**3) How to test the above ?**
 - In order to test the above, I created a simple HTTP server and HTTP client using node.js
 - I formed the following HTTP request and send it to the HTTP server using the HTTP client.
 
@@ -38,7 +38,7 @@ Connection: close<br/>
 
 *HTTP/3 unlike its previous versions is based on UDP which is another transport layer protocol.
 
-**3) How to use the project ?**
+**4) How to use the project ?**
 - Install node.js in your system.
 - Install a network analyzer tool in your system like wireshark, fiddler etc. In this project wireshark is used.
 - Open a command prompt from root of project folder.
