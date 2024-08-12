@@ -11,7 +11,7 @@
 - When user types any URL in browser what happens is a TCP connection is setup between client(browser)
 and server in the transport layer. 
 - Then in application layer the browser forms a HTTP request. 
-- This request will have a header part and body/payload part.
+- This request will have a start line, header part and body/payload part.
 - Then this request is sent to server using TCP connection.
 - The server is a HTTP server which parses the request.
 - And forms a HTTP response and sends it to client using TCP connection.
